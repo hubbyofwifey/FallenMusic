@@ -163,7 +163,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
@@ -202,7 +202,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
@@ -218,9 +218,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
-                            url=f"https://t.me/horimiya_family"),
-                    (text="owner sama",
-                     url=f"https://t.me/voidxtoxic)
+                            url=f"https://t.me/horimiya_family"),       
                    
                 ]
             ]
@@ -275,8 +273,6 @@ async def play(_, message: Message):
                         InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
                             url=f"https://t.me/horimiya_family"),
-                    (text="owner sama",
-                     url=f"https://t.me/voidxtoxic")
                    
                 ]
             ]
