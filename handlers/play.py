@@ -88,7 +88,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    command(["play", "ramdi", "armanramdi"])
+    command(["play", "p", "voidplay"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -98,7 +98,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ🔎")
+    lel = await message.reply("» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʀᴇ ʙᴀᴋᴀ🔎")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -118,24 +118,24 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ʙᴀʙʏ</b>")
+                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ғᴏᴏʟ</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "» ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ sᴏɴɢs​.")
+                        message.chat.id, "» ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀᴋᴀ, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ʜᴇᴀʀ sᴏɴɢs​. Aʜᴀʜᴀʜᴀʜᴀʜᴀʜ)
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ, sᴇɴᴅ /join ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
+                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ fool, sᴇɴᴅ /join ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>» ᴜsᴇʀʙᴏᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ.</i>")
+            f"<i>» ᴜsᴇʀʙᴏᴛ ɪs ʙᴀɴɴᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀᴋᴀ.</i>")
         return
     
     audio = (
@@ -148,12 +148,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» Gᴏᴍᴍᴇɴɴᴀsᴀɪ ʙᴀᴋᴀ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴇɴ ᴇxᴘᴇᴄᴛᴇᴅ.{DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
             )
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/9fc0515a16d6d85bf42c5.jpg"
+        thumb_name = "https://telegra.ph/file/a99efc618ebe98c9523a5.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -210,7 +210,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/9fc0515a16d6d85bf42c5.jpg"
+            thumb_name = "https://telegra.ph/file/a99efc618ebe98c9523a5.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -218,7 +218,9 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            url=f"https://t.me/horimiya_family"),
+                    (text="owner sama",
+                     url=f"https://t.me/voidxtoxic)
                    
                 ]
             ]
@@ -272,7 +274,9 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="💕 sᴜᴘᴘᴏʀᴛ 💕",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            url=f"https://t.me/horimiya_family"),
+                    (text="owner sama",
+                     url=f"https://t.me/voidxtoxic")
                    
                 ]
             ]
@@ -315,7 +319,4 @@ async def play(_, message: Message):
             caption="» ɴᴀᴍᴇ​ : {}\n\n🕕 ᴅᴜʀᴀᴛɪᴏɴ : `{}` ᴍɪɴᴜᴛᴇs\n💕 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ : {}\n💔 ᴘʟᴀʏɪɴɢ ɪɴ​ : `{}`\n".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
-
-    os.remove("final.png")
-    return await lel.delete()
     
