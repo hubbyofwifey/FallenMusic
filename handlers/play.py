@@ -184,7 +184,7 @@ async def play(_, message: Message):
             title = results[0]["title"]
             thumbnail = results[0]["thumbnails"][0]
             thumb_name = f"thumb{title}.jpg"
-            thumb = requests.get(thumbnail, allow_redirects=True)
+            thumb = requests.get(thumbnail, allow_redirects=False)
             open(thumb_name, "wb").write(thumb.content)
             duration = results[0]["duration"]
             url_suffix = results[0]["url_suffix"]
@@ -247,7 +247,7 @@ async def play(_, message: Message):
             title = results[0]["title"]
             thumbnail = results[0]["thumbnails"][0]
             thumb_name = f"thumb{title}.jpg"
-            thumb = requests.get(thumbnail, allow_redirects=True)
+            thumb = requests.get(thumbnail, allow_redirects=False)
             open(thumb_name, "wb").write(thumb.content)
             duration = results[0]["duration"]
             url_suffix = results[0]["url_suffix"]
@@ -315,4 +315,7 @@ async def play(_, message: Message):
             caption="» ɴᴀᴍᴇ​ : {}\n\n🕕 ᴅᴜʀᴀᴛɪᴏɴ : `{}` ᴍɪɴᴜᴛᴇs\n💕 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ : {}\n💔 ᴘʟᴀʏɪɴɢ ɪɴ​ : `{}`\n".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
+        
+    os.remove("final.png")
+    return await lel.delete()
     
