@@ -6,7 +6,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from callsmusic import client as USER
 
-PMSET =True
+PMSET =False
 pchats = []
 
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
