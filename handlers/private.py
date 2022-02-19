@@ -6,62 +6,61 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-@Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
+@Client.on_message(command("start","void") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAx0CZIiVngACSppiDZZGd6IPFA0TnEuOM3EqFbRxVQACCQMAArU72FSskU3O5FiqcyME")
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/053f99956ccee8416b8f7.jpg",
+        photo=f"https://telegra.ph/file/38ca11b0fb33d6d9cf472.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━
 🖤 ʜᴇʏ,
       ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 ┏━━━━━━━━━━━━━━┓
-┣★ᴄʀᴇᴀᴛᴏʀ: [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot)
+┣★ᴄʀᴇᴀᴛᴏʀ: [VOID](t.me/voidxtoxic)
 ┗━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/anonymous_was_bot) ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/VOIDXTOXIC) ...
 ━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✗ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ​ ✗", url="https://t.me/fallen_music_bot?startgroup=true")
+                        "• Add Void To Your Gc •", url="https://t.me/void_group_bot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
-                        "✗ ᴄʀᴇᴀᴛᴏʀ ✗", url="https://t.me/anonymous_was_bot"
+                        "✗ ᴄʀᴇᴀᴛᴏʀ ✗", url="https://t.me/voidxtoxic"
                     ),
                     InlineKeyboardButton(
-                        "✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/DevilsHeavenMF"
+                        "✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/horimiya_family"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "✗ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ ✗", url="https://t.me/DevilsHeavenMF"
+                        "✗ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ ✗", url="https://t.me/horimiya_family"
                     )]
             ]
        ),
     )
 
-@Client.on_message(command(["ping", "repo", "anon", "alive"]) & filters.group & ~filters.edited & ~filters.private)
+@Client.on_message(command(["ping", "repo", "voidvc", "alive"]) & filters.group & ~filters.edited & ~filters.private)
 
 async def help(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAx0CZIiVngACSppiDZZGd6IPFA0TnEuOM3EqFbRxVQACCQMAArU72FSskU3O5FiqcyME")
     await message.reply_text(
-        text=f"""» ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !""",
+        text=f"""» ɪ ᴀᴍ ᴀʟɪᴠᴇ ree !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✗ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✗", url="https://t.me/anonymous_was_bot")
+                        "✗ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✗", url="https://t.me/voidxtoxic")
                   ],[
                     InlineKeyboardButton(
-                        "✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/DevilsHeavenMF"
+                        "✗ sᴜᴘᴘᴏʀᴛ ✗", url="https://t.me/horimiya_family"
                     ),
                     InlineKeyboardButton(
-                        "✗ sᴏᴜʀᴄᴇ ✗", url="https://t.me/DevilsHeavenMF"
+                        "✗ sᴏᴜʀᴄᴇ ✗", url="https://t.me/horimiya_family"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "✗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​​ ✗", url="https://t.me/fallen_music_bot?startgroup=true"
+                        "✗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​​ ✗", url="https://t.me/void_group_bot?startgroup=true"
                     )]
             ]
         ),
