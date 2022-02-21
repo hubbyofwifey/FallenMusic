@@ -58,7 +58,7 @@
 
 ## Heroku Deployment 🚀
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/hubbyofwifey/voidvcc"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/hubbyofwifey/voidvccc"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot more stable).
 
 ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ 📡
